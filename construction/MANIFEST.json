@@ -1,0 +1,33 @@
+{
+  "exports": [
+    {
+      "file": "history-numbers.construction.json",
+      "schema": "meaning-model-construction-history/v2",
+      "bytes": 5202332,
+      "fileSha256": "544aea12d1cc0bf2c9b52194c6f876f5690dcd94c90068c5d03f2fddfbd6fe3a",
+      "bundleSha256": "e8b41eb1f96e72f6497c34c730d41865ca8e070cae9cdf9aa7ab15ae24b2256f",
+      "graphId": "history-numbers",
+      "headGraphHash": "9403f66db23ba03bb4064906ffb15f7d6cc3273afb634ea43164c4a8801c3046",
+      "headModelHash": "6c33fb4dd0140b7d3e8049b0986f8b19eba7c8c6c9a9ebaa9f1a248cf4f34062",
+      "graphRevisions": 23,
+      "models": 58,
+      "accessScopes": [
+        "world-history"
+      ],
+      "exportedWith": {
+        "meaningModel": "0.12.0",
+        "sema": "0.10.0"
+      },
+      "importCheck": "Imported into a fresh engine of the released 0.12.0 with life_construction_import: verified, the same head graph hash and bundle hash (2026-10-14).",
+      "note": "History as numbers, continued by a pass on the causes of its turning points, a pass on the Events of each era, region and dimension, and corrections from blind readers. 56 processes, 676 Events, 551 of them placed in the UN M49 areas and subregions, 1,845 importance judgments, 36 cause questions with 123 weighed causes. The graph history was rebuilt on 2026-10-14, so graph hashes from revision 1 on differ from copies made before that date; the models are unchanged."
+    }
+  ],
+  "notPublished": {
+    "construction": "The structure (run 2, revision 5) and its long-term fill, with every recorded verdict.",
+    "why": "Its notes link files by absolute local paths, which are part of its hash-bound history. It stays out of this repository until a version without them can be exported; structure/ holds the tree it built.",
+    "headGraphHash": "f9b80beaffcc4f27eed60379abc28d7c2b106e6297aa6d7343245078cae13fbd",
+    "bundleSha256": "1fbab9d9205f2f5ed04bd5f8a3c131d4f5f3c15032ce24791107a26c0847fb79",
+    "headModelHash": "2f43d3fbb8ff9ecec2009179efa6be7c969827e23455328e07f991747fa16958",
+    "importCheck": "Imported into a fresh 0.8.0 engine with life_construction_import: verified, same head graph hash and bundle hash (2026-10-08). Imported again into a fresh engine of the released 0.9.0 with life_construction_import: verified, the same head graph hash and bundle hash (2026-10-09)."
+  }
+}

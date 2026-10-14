@@ -1,0 +1,62 @@
+{
+  "meaningModel": {
+    "release": "0.12.0",
+    "repository": "emergent-wisdom/meaning-model",
+    "tag": "v0.12.0",
+    "commit": "0901a8ff8dd2f7c42524882e8d353da7976b1e0e",
+    "package": {
+      "name": "@emergent-wisdom/meaning-model-mcp",
+      "source": "npm",
+      "tarball": "emergent-wisdom-meaning-model-mcp-0.12.0.tgz",
+      "sha256": "dc6fc59a40994c66250ff0a02de559214f1a9a5791d13b75c6f4960950e33186",
+      "integrity": "sha512-qDX6arjo/kjx4TH68lV8Re/6GNGe6JuGc+GkB0tFSdUCdQ0e5UXx4BQZ8YFoXr6GBYcORXm6xv2NZmV+2AuMQw=="
+    },
+    "engine": {
+      "aarch64-apple-darwin": {
+        "asset": "life-sim-engine-v0.12.0-aarch64-apple-darwin",
+        "sha256": "5ab9147cc10b700e079cc12a310f5f27d89dffc3b4618e5db1a0a816beeec53c"
+      },
+      "x86_64-apple-darwin": {
+        "asset": "life-sim-engine-v0.12.0-x86_64-apple-darwin",
+        "sha256": "3933671e23191bfe8606099d357ee2daa057c384e33de5519f832f80deb7c64c"
+      },
+      "x86_64-unknown-linux-gnu": {
+        "asset": "life-sim-engine-v0.12.0-x86_64-unknown-linux-gnu",
+        "sha256": "454c376944e1b80638d2be55308e3dca449cc624852f72a5af0347ec4987a36d"
+      },
+      "x86_64-pc-windows-msvc": {
+        "asset": "life-sim-engine-v0.12.0-x86_64-pc-windows-msvc.exe",
+        "sha256": "6894c467560d02f05e8ba722961607615483a635da746a065941c86bf5d9b070"
+      }
+    },
+    "note": "The published 0.12.0 release: the package as published on npm (its GitHub release carries the engines only), checked against its SHA-256 and npm integrity; the engine from the GitHub release, checked against these digests."
+  },
+  "sema": {
+    "release": "0.10.0",
+    "repository": "emergent-wisdom/sema",
+    "tag": "v0.10.0",
+    "commit": "67fa9f22d8184dc1ae2ba4dc605e6d56b253b187",
+    "package": {
+      "name": "semahash",
+      "extras": [
+        "mcp"
+      ],
+      "wheel": "semahash-0.10.0-py3-none-any.whl",
+      "sha256": "692da3234eddfbe6811b7d55d6ddbc14b9b5d612aedf53f057d1f78544d894d3"
+    },
+    "vocabulary": {
+      "preset": "full",
+      "patterns": 617,
+      "semanticRoot": "8f9c8b8446e185bf94650ce0f3f351d8f66bde6f084d93ef6d2c0300bd362190",
+      "catalogRoot": "40c2100ab60726f8ce39a993645efc80e2c9c3cdd6bdf89e0abc35e146418913",
+      "note": "The starting vocabulary: the 0.10.0 package's full preset. The project's own Sema server works on a copy of it in store/sema/, so minting never touches another vocabulary."
+    },
+    "projectVocabulary": {
+      "cards": "sema/patterns",
+      "patterns": 617,
+      "semanticRoot": "17d4060f929b865cbf32dee5b1de0f2a82ba9af72a901ec5e7cd341527fd4b84",
+      "catalogRoot": "50d46f1b23c4f1270dbf0e935e27591d5c04b5fc591c03e1524a9fda59396090",
+      "note": "The starting vocabulary plus this project's cards. scripts/setup.sh rebuilds it from the preset and sema/patterns and checks both roots; update them here whenever a card is added or changed."
+    }
+  }
+}

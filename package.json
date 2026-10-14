@@ -1,0 +1,16 @@
+{
+  "name": "world-history",
+  "private": true,
+  "type": "module",
+  "description": "A Meaning Model construction of world history: an account of how the present came to be, built with the Meaning Model and Sema.",
+  "scripts": {
+    "setup": "scripts/setup.sh",
+    "bridge": "node scripts/bridge.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/client": "2.0.0"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  }
+}

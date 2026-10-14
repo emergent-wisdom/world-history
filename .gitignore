@@ -1,0 +1,18 @@
+# The installed toolchain (scripts/setup.sh rebuilds it from tool.json).
+/.tools/
+
+# Working stores: the engine's database and the project Sema vocabulary.
+# The construction is committed as its exported history, never as a database.
+/store/
+
+# Local working artifacts: call logs, smoke tests, notes, drafts.
+.local-work/
+
+node_modules/
+.DS_Store
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.db-wal
+*.db-shm
+*.db-journal

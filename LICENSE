@@ -1,0 +1,24 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Henrik Westerberg
+
+Except where otherwise identified, the contents of this repository are licensed
+under the Creative Commons Attribution 4.0 International License: the world
+history construction and its exported record, the model records and guessed
+values, the history tree, the documentation and the scripts.
+
+License and attribution guidance:
+https://creativecommons.org/licenses/by/4.0/
+
+Full legal terms:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribute Henrik Westerberg and the World History construction, built with the
+Meaning Model (https://meaningmodel.ai/), retain the supplied notices and
+license link, and indicate modifications. The legal terms govern; this notice
+does not replace them.
+
+Third-party works, data, quotations and dependencies, including the Meaning
+Model and Sema packages that tool.json pins and the packages package-lock.json
+pins, retain their own rights and licenses. Citations identify sources; they do
+not relicense the cited works.
