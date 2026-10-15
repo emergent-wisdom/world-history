@@ -3,23 +3,23 @@
     {
       "file": "history-numbers.construction.json",
       "schema": "meaning-model-construction-history/v2",
-      "bytes": 5202332,
-      "fileSha256": "544aea12d1cc0bf2c9b52194c6f876f5690dcd94c90068c5d03f2fddfbd6fe3a",
-      "bundleSha256": "e8b41eb1f96e72f6497c34c730d41865ca8e070cae9cdf9aa7ab15ae24b2256f",
+      "bytes": 11972166,
+      "fileSha256": "57994b6d21344223c328468379664af0e4576f14b043a2e4fe08b230201ac6a5",
+      "bundleSha256": "6e0c5f5afb83adb55f87f393c7b714460c3b812b73caaec9062757a008092c6e",
       "graphId": "history-numbers",
-      "headGraphHash": "9403f66db23ba03bb4064906ffb15f7d6cc3273afb634ea43164c4a8801c3046",
-      "headModelHash": "6c33fb4dd0140b7d3e8049b0986f8b19eba7c8c6c9a9ebaa9f1a248cf4f34062",
-      "graphRevisions": 23,
-      "models": 58,
+      "headGraphHash": "e6f43556d30a99e9609465360fb42fdc56e4a94cdc4fecac4b9ffc61eba1373c",
+      "headModelHash": "a82f1a8b5b0ff53868dcfd9dbef68cf0556acd603f5e63401e519240e6cdad13",
+      "graphRevisions": 173,
+      "models": 183,
       "accessScopes": [
         "world-history"
       ],
       "exportedWith": {
-        "meaningModel": "0.12.0",
+        "meaningModel": "0.13.0",
         "sema": "0.10.0"
       },
-      "importCheck": "Imported into a fresh engine of the released 0.12.0 with life_construction_import: verified, the same head graph hash and bundle hash (2026-10-14).",
-      "note": "History as numbers, continued by a pass on the causes of its turning points, a pass on the Events of each era, region and dimension, and corrections from blind readers. 56 processes, 676 Events, 551 of them placed in the UN M49 areas and subregions, 1,845 importance judgments, 36 cause questions with 123 weighed causes. The graph history was rebuilt on 2026-10-14, so graph hashes from revision 1 on differ from copies made before that date; the models are unchanged."
+      "importCheck": "Imported into a fresh engine of the released 0.13.0 with life_construction_import: verified, the same head graph hash and bundle hash (2026-10-15).",
+      "note": "History as numbers, continued by passes on causes, Events and places, and corrections from blind readers; then, on 2026-10-14 and 15, passes that placed every Event, filled the Americas, Oceania and South-eastern Asia, carved the tree of processes with recorded carves (28 carves, 113 processes), and checked and corrected that work. 1,143 Events, 188 weighed causes, 3,309 importance judgments; the coverage report says this pass is done. The graph history was rebuilt on 2026-10-14, so graph hashes from revision 1 on differ from copies made before that date."
     }
   ],
   "notPublished": {

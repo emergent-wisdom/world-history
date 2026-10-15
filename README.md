@@ -7,7 +7,7 @@ thinking patterns the construction uses, cited by their content-addressed handle
 for the categories the construction defines, where a precise definition earns one.
 
 **Status:** two constructions, the structure and history as numbers built on it; history as numbers is on the released
-Meaning Model 0.12.0.
+Meaning Model 0.13.0.
 In the structure (run 2), History, the lifecycle of the Universe, is the root. Beneath it
 are the Earth, its land divided into the UN M49 regions, life on Earth and humanity, and the conceptual decomposition
 of a human way of living into twelve dimensions and two further levels. The decomposition was carved with Fractal
@@ -37,8 +37,22 @@ passes followed, made through the tools, the first two by fresh agents and the t
   Achaemenid Empire, the end of the Last Interglacial, an argument about the megafauna now marked as exploratory, and
   two debated claims now stated as debates.
 
-The new Events open questions of their own: the coverage report asks for values at the Events that 52 processes now
-pass over, and for 57 more values at its finest level. That is the next pass. The first run, which picked its eras and series by convention and filled values first, is superseded; what it taught is
+Five more passes followed on 2026-10-14 and 15, each by a fresh agent: the first on the released 0.12.0, the Americas
+and the first part of Oceania on a candidate of 0.13.0 before its release, and the rest on the released 0.13.0.
+- **Places and coverage.** Every Event was placed, in the UN M49 areas and subregions or in the Earth as a whole, and
+  the measures were given values at the Events that move them.
+- **Regions.** The Americas, Oceania and South-eastern Asia were filled out era by era, each subregion with periods of
+  its own, with the importance of each Event and the weighed causes of their turning points. The construction now
+  holds 1,143 Events, 3,309 judgments of importance and 65 more weighed causes.
+- **The tree of processes.** The account was asked what it was missing. 28 divisions were carved with the conceptual
+  decomposition and recorded with `life_carve_record`, each with its frame, its climb to broader kinds, the tests of
+  every candidate part and its synthesis, and their parts opened: the tree went from 56 processes to 113, such as the
+  four forests by climate zone, the carbon cycle's own level beside the human addition, and war between polities,
+  within them and one-sided killing. What is still uncarved is named in the closing notes.
+- **A check.** That work was read again against what is known and corrected where it was wrong, each correction with
+  its reason; by the coverage report the pass is done.
+
+The first run, which picked its eras and series by convention and filled values first, is superseded; what it taught is
 kept in [METHOD.md](METHOD.md).
 
 [METHOD.md](METHOD.md) describes how the construction is built and how Sema is used in it.
@@ -93,7 +107,7 @@ What is committed is the exported construction history of history as numbers,
 (`life_construction_export`, schema `meaning-model-construction-history/v2`), its first pass built by
 [`numbers/build.mjs`](numbers/build.mjs) from [`numbers/model.js`](numbers/model.js) and every later pass made
 through the Meaning Model's tools, with its hashes in [`construction/MANIFEST.json`](construction/MANIFEST.json). It
-imports into a fresh engine of the released 0.12.0 with the same hashes (`life_construction_import`). The structure's own construction history, with every recorded verdict,
+imports into a fresh engine of the released 0.13.0 with the same hashes (`life_construction_import`). The structure's own construction history, with every recorded verdict,
 is not published yet: its notes link files by absolute local paths, which are part of its hash-bound history. The
 manifest records its hashes, and [`structure/`](structure/) holds the tree it built. Engine databases, the working Sema
 vocabulary and call logs stay local and ignored.
@@ -144,9 +158,9 @@ minting.
 
 [`tool.json`](tool.json) pins both tools:
 
-- **Meaning Model 0.12.0** (tag [`v0.12.0`](https://github.com/emergent-wisdom/meaning-model/releases/tag/v0.12.0),
-  commit `0901a8f`): the package as published on npm, by SHA-256 and npm integrity, and the engine for each platform
-  from the GitHub release, by SHA-256.
+- **Meaning Model 0.13.0** (tag [`v0.13.0`](https://github.com/emergent-wisdom/meaning-model/releases/tag/v0.13.0),
+  commit `388050c`): the package as published on npm, by SHA-256 and npm integrity, and the engine for each platform
+  from the GitHub release, by SHA-256. 0.13.0 is the first release with `life_carve_record`, which the tree pass used.
 - **Sema 0.10.0** (`semahash` on PyPI, tag `v0.10.0`, commit `67fa9f2`): the wheel by SHA-256, and the starting
   vocabulary, the package's full preset of 617 patterns, by its semantic and catalog roots.
 

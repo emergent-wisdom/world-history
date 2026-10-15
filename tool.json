@@ -1,35 +1,35 @@
 {
   "meaningModel": {
-    "release": "0.12.0",
+    "release": "0.13.0",
     "repository": "emergent-wisdom/meaning-model",
-    "tag": "v0.12.0",
-    "commit": "0901a8ff8dd2f7c42524882e8d353da7976b1e0e",
+    "tag": "v0.13.0",
+    "commit": "388050c28bdfd82770433d53d2532a9fcc4ced93",
     "package": {
       "name": "@emergent-wisdom/meaning-model-mcp",
       "source": "npm",
-      "tarball": "emergent-wisdom-meaning-model-mcp-0.12.0.tgz",
-      "sha256": "dc6fc59a40994c66250ff0a02de559214f1a9a5791d13b75c6f4960950e33186",
-      "integrity": "sha512-qDX6arjo/kjx4TH68lV8Re/6GNGe6JuGc+GkB0tFSdUCdQ0e5UXx4BQZ8YFoXr6GBYcORXm6xv2NZmV+2AuMQw=="
+      "tarball": "emergent-wisdom-meaning-model-mcp-0.13.0.tgz",
+      "sha256": "7eaae966e88c507cb27339484f578ba77d49622e293fb17a4a5f5553380445b4",
+      "integrity": "sha512-qWnKQ7P3ivJWAJKdqjY6Zf2kKoROaxP2Iu2rLQhpePofswZKR5kIh8VhyUH7rOxtUK/H52D5QGplNWDmhGSTRw=="
     },
     "engine": {
       "aarch64-apple-darwin": {
-        "asset": "life-sim-engine-v0.12.0-aarch64-apple-darwin",
-        "sha256": "5ab9147cc10b700e079cc12a310f5f27d89dffc3b4618e5db1a0a816beeec53c"
+        "asset": "life-sim-engine-v0.13.0-aarch64-apple-darwin",
+        "sha256": "ca6b195f32ac167894c1feedee9e1a52b77ae3300264e15783315cc9d050ebf2"
       },
       "x86_64-apple-darwin": {
-        "asset": "life-sim-engine-v0.12.0-x86_64-apple-darwin",
-        "sha256": "3933671e23191bfe8606099d357ee2daa057c384e33de5519f832f80deb7c64c"
+        "asset": "life-sim-engine-v0.13.0-x86_64-apple-darwin",
+        "sha256": "66bd14aaf99acf4303cfba60959574cc92822b17417b633206498d652a3e1fb8"
       },
       "x86_64-unknown-linux-gnu": {
-        "asset": "life-sim-engine-v0.12.0-x86_64-unknown-linux-gnu",
-        "sha256": "454c376944e1b80638d2be55308e3dca449cc624852f72a5af0347ec4987a36d"
+        "asset": "life-sim-engine-v0.13.0-x86_64-unknown-linux-gnu",
+        "sha256": "9bb5634d2e70509cee9f950fd12de3b77a46e14bb41c9a3c93e28dadceb3528d"
       },
       "x86_64-pc-windows-msvc": {
-        "asset": "life-sim-engine-v0.12.0-x86_64-pc-windows-msvc.exe",
-        "sha256": "6894c467560d02f05e8ba722961607615483a635da746a065941c86bf5d9b070"
+        "asset": "life-sim-engine-v0.13.0-x86_64-pc-windows-msvc.exe",
+        "sha256": "db4ff8dd4d3ef3b784e72a588a8960c779318c6a45a38a2abf5cd623345763d4"
       }
     },
-    "note": "The published 0.12.0 release: the package as published on npm (its GitHub release carries the engines only), checked against its SHA-256 and npm integrity; the engine from the GitHub release, checked against these digests."
+    "note": "The published 0.13.0 release: the package as published on npm (its GitHub release carries the engines only), checked against its SHA-256 and npm integrity; the engine from the GitHub release, checked against these digests."
   },
   "sema": {
     "release": "0.10.0",
