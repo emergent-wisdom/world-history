@@ -6,6 +6,11 @@ the reasoning behind each choice recorded beside what it concerns. [Sema](https:
 thinking patterns the construction uses, cited by their content-addressed handles, and can hold shared identities
 for the categories the construction defines, where a precise definition earns one.
 
+**Explore it.** [History of humanity](https://meaningmodel.ai/world-history/) shows the published state on
+meaningmodel.ai: ask for any time, place or Event, zoom into it, and see where it happened on a globe. The whole
+model, with the reasoning recorded beside it, opens in the
+[Meaning Model viewer](https://meaningmodel.ai/world-history/model/).
+
 **Status:** two constructions, the structure and history as numbers built on it; history as numbers, at its state of
 18 October 2026, imports into Meaning Model 0.15.0.
 In the structure (run 2), History, the lifecycle of the Universe, is the root. Beneath it
