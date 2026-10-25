@@ -3,23 +3,22 @@
     {
       "file": "history-numbers.construction.json",
       "schema": "meaning-model-construction-history/v2",
-      "bytes": 13541851,
-      "fileSha256": "301304175bad6fb9ef45bf26f3256d55d989d1c24f5c0e9252a9b5be843c5c7c",
-      "bundleSha256": "48264d8026b37ce077edf542f9319d338c0437be0996ae23b56cc99295cc8399",
+      "bytes": 27191443,
+      "fileSha256": "8a52e83bffb1e0842f6443cadf61ae23862cf1044cbd70e88feca35248b75181",
+      "bundleSha256": "8ae8c95fd09f59313881f9109070707d55c0453a1da598c235e54c4a3d0fb370",
       "graphId": "history-numbers",
-      "headGraphHash": "74c743aca0dfd4a4e4170b98aa60ab6871e90d56c32324cccf31f8f2c0181b78",
-      "headModelHash": "159e05b42a4762ecc5c8993be0eac83c6d7af1ccd3b633fc3a459ec21751159d",
-      "graphRevisions": 257,
-      "models": 230,
+      "headGraphHash": "b42a853dd74020f487fb96d0a3afefee493406450de24d877eba64000cff8b2a",
+      "headModelHash": "ca7375fd639e8cf729bafea940dd03ededb9e72632e69365a82dac45a891deb8",
+      "graphRevisions": 520,
+      "models": 539,
       "accessScopes": [
         "world-history"
       ],
       "exportedWith": {
-        "meaningModel": "0.13.1",
-        "sema": "0.10.0"
+        "meaningModel": "0.14.0 release candidate"
       },
-      "importCheck": "Imported into a fresh engine of the released 0.13.1 with life_construction_import: verified, the same head graph hash and bundle hash (2026-10-15).",
-      "note": "History as numbers, continued by passes on causes, Events and places, and corrections from blind readers; then, on 2026-10-14 and 15, passes that placed every Event, filled the Americas, Oceania and South-eastern Asia, carved the tree of processes with recorded carves (28 carves, 113 processes), and checked and corrected that work; a further pass on 0.13.1 carved 14 more and recorded 19 processes kept whole, each with its reason (152 processes). 1,143 Events, 188 weighed causes, 3,309 importance judgments; the coverage report says this pass is done. The graph history was rebuilt on 2026-10-14, so graph hashes from revision 1 on differ from copies made before that date."
+      "importCheck": "Imported into a fresh engine of the 0.15.0 release candidate, whose code is the release's, with life_construction_import, through scripts/bridge.mjs and scripts/call.mjs: verified, the same head graph hash and bundle hash (2026-10-25). The released 0.13.1 refuses it: unknown field `withdrawn`, which 0.14.0 added (2026-10-25).",
+      "note": "The state of 15 October, continued by eight passes on 2026-10-17 and 18, each by a fresh agent on the 0.14.0 release candidate, the first stopped partway. They filled the next level of the time schedule, widened the account where Events moved no process, deepened it where the tool named a process worth examining, and declared where a process's parts add up to it: 239 processes, 42 of them declaring a sum, and 1,152 Events; the coverage report found the work complete. The state of 15 October is at commit 0220fb3 (fileSha256 301304175bad6fb9…, headGraphHash 74c743aca0dfd4a4…). As there, graph hashes from revision 1 on differ from copies made before 2026-10-14, when the graph history was rebuilt."
     }
   ],
   "notPublished": {

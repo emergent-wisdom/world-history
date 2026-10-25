@@ -103,7 +103,7 @@ const log = (server, name, payload) => {
 const call = async (server = 'meaning-model', name, args = {}) => {
   const client = clients[server];
   if (!client) throw new Error(`No server ${server}; use meaning-model or sema.`);
-  const result = await client.callTool({ name, arguments: args }, undefined, { timeout: 1_800_000 });
+  const result = await client.callTool({ name, arguments: args }, { timeout: 1_800_000 });
   const out = { server, name, isError: result.isError ?? false, structuredContent: result.structuredContent ?? null,
     content: result.structuredContent ? undefined : result.content };
   out.logFile = log(server, name, { request: { server, name, arguments: args }, response: out });

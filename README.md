@@ -6,8 +6,8 @@ the reasoning behind each choice recorded beside what it concerns. [Sema](https:
 thinking patterns the construction uses, cited by their content-addressed handles, and can hold shared identities
 for the categories the construction defines, where a precise definition earns one.
 
-**Status:** two constructions, the structure and history as numbers built on it; history as numbers is on the released
-Meaning Model 0.13.1.
+**Status:** two constructions, the structure and history as numbers built on it; history as numbers, at its state of
+18 October 2026, imports into Meaning Model 0.15.0.
 In the structure (run 2), History, the lifecycle of the Universe, is the root. Beneath it
 are the Earth, its land divided into the UN M49 regions, life on Earth and humanity, and the conceptual decomposition
 of a human way of living into twelve dimensions and two further levels. The decomposition was carved with Fractal
@@ -55,6 +55,17 @@ a sixth, deeper pass followed on a candidate of 0.13.1 identical in code to its 
 - **Deeper, on 0.13.1.** A further pass carved 14 more divisions and recorded 19 processes kept whole, each with the
   reason it is not worth dividing yet: the tree now has 152 processes. Parts that sit under a carved parent without
   having been tested in its carve, such as internet use and the religion shares, are named in its closing note.
+
+Eight more passes followed on 2026-10-17 and 18, each by a fresh agent on the 0.14.0 release candidate, whose changes
+are included in 0.15.0; the first was stopped partway. They worked to one brief:
+- **The time schedule.** They filled its next level.
+- **Breadth.** Where Events moved no process, they widened the account. The construction now holds 1,152 Events.
+- **Depth.** Where the tool named a process worth examining, they deepened it: the tree now has 239 processes.
+- **Sums.** 42 processes declare that their parts add up to them, and the tool checks each against its parts.
+
+By the coverage report the work is complete: every level of the time schedule filled, no process without values, and
+no declared sum contradicted by its parts. Four further passes, on 19 and 20 October, are reported in the Meaning
+Model paper and are not yet published here.
 
 The first run, which picked its eras and series by convention and filled values first, is superseded; what it taught is
 kept in [METHOD.md](METHOD.md).
@@ -111,12 +122,15 @@ What is committed is the exported construction history of history as numbers,
 (`life_construction_export`, schema `meaning-model-construction-history/v2`), its first pass built by
 [`numbers/build.mjs`](numbers/build.mjs) from [`numbers/model.js`](numbers/model.js) and every later pass made
 through the Meaning Model's tools, with its hashes in [`construction/MANIFEST.json`](construction/MANIFEST.json). It
-imports into a fresh engine of the released 0.13.1 with the same hashes (`life_construction_import`). The structure's own construction history, with every recorded verdict,
+imports into a fresh engine of Meaning Model 0.15.0 with the same hashes (`life_construction_import`); the state of
+15 October, at commit `0220fb3`, imports into the released 0.13.1. The toolchain below still pins 0.13.1, which
+refuses this export because it uses fields added after 0.13.1. The structure's own construction history, with every recorded verdict,
 is not published yet: its notes link files by absolute local paths, which are part of its hash-bound history. The
 manifest records its hashes, and [`structure/`](structure/) holds the tree it built. Engine databases, the working Sema
 vocabulary and call logs stay local and ignored.
 
-To continue a construction, start the bridge on an empty store and import its history:
+To continue a construction, start the bridge on an empty store and import its history, which takes about twelve
+minutes:
 
 ```sh
 node scripts/bridge.mjs

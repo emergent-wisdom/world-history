@@ -5,6 +5,7 @@
 //
 // Exits 1 when the tool reports an error.
 import { readFileSync, writeFileSync } from 'node:fs';
+import http from 'node:http';
 
 const argv = process.argv.slice(2);
 const option = (name, fallback) => {
@@ -17,14 +18,25 @@ const port = option('port', '8811');
 const server = option('server', 'meaning-model');
 const readUri = option('read', null);
 
-const call = async (name, args) => {
-  const response = await fetch(`http://127.0.0.1:${port}/call`, {
-    method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ server, name, arguments: args }),
+// node:http rather than fetch: fetch gives up after five minutes without a response, and importing a large
+// construction takes longer. The bridge allows each call thirty minutes.
+const call = (name, args) => new Promise((resolve, reject) => {
+  const body = JSON.stringify({ server, name, arguments: args });
+  const request = http.request({ host: '127.0.0.1', port, path: '/call', method: 'POST',
+    headers: { 'content-type': 'application/json', 'content-length': Buffer.byteLength(body) } }, (response) => {
+    let text = '';
+    response.setEncoding('utf8');
+    response.on('data', (chunk) => { text += chunk; });
+    response.on('end', () => {
+      try {
+        const out = JSON.parse(text);
+        if (out.error) reject(new Error(out.error)); else resolve(out);
+      } catch (error) { reject(error); }
+    });
   });
-  const out = await response.json();
-  if (out.error) throw new Error(out.error);
-  return out;
-};
+  request.on('error', reject);
+  request.end(body);
+});
 
 if (readUri) {
   let offset = 0; let text = ''; let sha256 = null;
