@@ -17,7 +17,7 @@
       "exportedWith": {
         "meaningModel": "0.14.0 release candidate"
       },
-      "importCheck": "Imported into a fresh engine of the 0.15.0 release candidate, whose code is the release's, with life_construction_import, through scripts/bridge.mjs and scripts/call.mjs: verified, the same head graph hash and bundle hash (2026-10-25). The released 0.13.1 refuses it: unknown field `withdrawn`, which 0.14.0 added (2026-10-25).",
+      "importCheck": "Imported into a fresh engine of the published Meaning Model 0.15.0 with life_construction_import, through scripts/bridge.mjs and scripts/call.mjs: verified, 520 graph revisions and 539 models, with the same file, head graph and bundle hashes (2026-10-25).",
       "note": "The state of 15 October, continued by eight passes on 2026-10-17 and 18, each by a fresh agent on the 0.14.0 release candidate, the first stopped partway. They filled the next level of the time schedule, widened the account where Events moved no process, deepened it where the tool named a process worth examining, and declared where a process's parts add up to it: 239 processes, 42 of them declaring a sum, and 1,152 Events; the coverage report found the work complete. The state of 15 October is at commit 0220fb3 (fileSha256 301304175bad6fb9…, headGraphHash 74c743aca0dfd4a4…). As there, graph hashes from revision 1 on differ from copies made before 2026-10-14, when the graph history was rebuilt."
     }
   ],

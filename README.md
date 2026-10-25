@@ -123,8 +123,7 @@ What is committed is the exported construction history of history as numbers,
 [`numbers/build.mjs`](numbers/build.mjs) from [`numbers/model.js`](numbers/model.js) and every later pass made
 through the Meaning Model's tools, with its hashes in [`construction/MANIFEST.json`](construction/MANIFEST.json). It
 imports into a fresh engine of Meaning Model 0.15.0 with the same hashes (`life_construction_import`); the state of
-15 October, at commit `0220fb3`, imports into the released 0.13.1. The toolchain below still pins 0.13.1, which
-refuses this export because it uses fields added after 0.13.1. The structure's own construction history, with every recorded verdict,
+15 October, at commit `0220fb3`, imports into the released 0.13.1. The structure's own construction history, with every recorded verdict,
 is not published yet: its notes link files by absolute local paths, which are part of its hash-bound history. The
 manifest records its hashes, and [`structure/`](structure/) holds the tree it built. Engine databases, the working Sema
 vocabulary and call logs stay local and ignored.
@@ -176,9 +175,10 @@ minting.
 
 [`tool.json`](tool.json) pins both tools:
 
-- **Meaning Model 0.13.1** (tag [`v0.13.1`](https://github.com/emergent-wisdom/meaning-model/releases/tag/v0.13.1),
-  commit `889641b`): the package as published on npm, by SHA-256 and npm integrity, and the engine for each platform
-  from the GitHub release, by SHA-256. 0.13.0 is the first release with `life_carve_record`, which the tree pass used.
+- **Meaning Model 0.15.0** (tag [`v0.15.0`](https://github.com/emergent-wisdom/meaning-model/releases/tag/v0.15.0),
+  commit `308a17e`): the package as published on npm, by SHA-256 and npm integrity, and the engine for each platform
+  from the GitHub release, by SHA-256. 0.15.0 is the first release that imports the state of 18 October, which uses
+  fields added in 0.14.0, a version prepared but never published.
 - **Sema 0.10.0** (`semahash` on PyPI, tag `v0.10.0`, commit `67fa9f2`): the wheel by SHA-256, and the starting
   vocabulary, the package's full preset of 617 patterns, by its semantic and catalog roots.
 
