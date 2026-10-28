@@ -12,7 +12,7 @@ model, with the reasoning recorded beside it, opens in the
 [Meaning Model viewer](https://meaningmodel.ai/world-history/model/).
 
 **Status:** two constructions, the structure and history as numbers built on it; history as numbers, at its state of
-18 October 2026, imports into Meaning Model 0.15.0.
+28 October 2026, imports into Meaning Model 0.15.0.
 In the structure (run 2), History, the lifecycle of the Universe, is the root. Beneath it
 are the Earth, its land divided into the UN M49 regions, life on Earth and humanity, and the conceptual decomposition
 of a human way of living into twelve dimensions and two further levels. The decomposition was carved with Fractal
@@ -72,6 +72,38 @@ By the coverage report the work is complete: every level of the time schedule fi
 no declared sum contradicted by its parts. Four further passes, on 19 and 20 October, are reported in the Meaning
 Model paper and are not yet published here.
 
+Three more passes followed from 25 to 28 October on the released 0.15.0, continuing the state of 18 October:
+- **Countries and positions.** The UN M49 standard's 248 countries and areas became places inside its regions, and
+  every place has a point, its latitude and longitude from Natural Earth's map units. One agent placed the Events of
+  Eastern Africa first, then one agent per continent placed the rest, each in at most three countries: 629 of the 1,122
+  Events, the places' own lives aside, now stand in a country.
+- **Laws.** 21 laws, written in the engine's own expressions, set the model's numbers against each other:
+  - identities, such as world output being people times output per person;
+  - bridges with stated parameters, such as births from fertility, or the energy and carbon in the fossil fuels
+    burned;
+  - bounds, such as the largest town holding at most all town dwellers.
+
+  The processes they derive hold their values beside the recorded ones. Two laws that would change recorded
+  processes are recorded but switched off. A fresh agent weighed the ten findings against the literature, in full
+  texts where it could reach them, and its ledger says how much of each it read. None was a discovery. Two were known
+  effects, and one identity holds by construction. The other seven were errors in the model. The largest, a gap
+  between births minus deaths and the counts before 1950, has a published explanation, the forager population
+  paradox.
+- **Corrections.** Three that needed no new numbers were made by script, and a fresh agent made five from sources.
+  Among them:
+  - The 1918 influenza is dated to its autumn wave, and each plague has its own waves.
+  - The world's population falls about 1% over 541–549, not 7%, after Mordechai et al. (2019).
+  - Land-use carbon, the share of carbon kept in the air, the carbon in a tonne of coal or oil, and the energy in a
+    tonne of coal are recorded as series by era, and the laws read them.
+  - Towns are a Thing of their own from 5000 BCE.
+  - A death rate for the crises the model does not date closes part of the growth gap. About 0.4 to 0.6% a year is
+    still unexplained before 1950, and the notes say what could explain it.
+
+  Two were held: the surplus bound, whose two shares have different denominators, and the size of Çatalhöyük, whose
+  lower estimate comes from a 2024 study read only through a report of it.
+
+By the coverage report this work is complete too. The construction now holds 543 processes, 1,400 Events and 21 laws.
+
 The first run, which picked its eras and series by convention and filled values first, is superseded; what it taught is
 kept in [METHOD.md](METHOD.md).
 
@@ -128,7 +160,9 @@ What is committed is the exported construction history of history as numbers,
 [`numbers/build.mjs`](numbers/build.mjs) from [`numbers/model.js`](numbers/model.js) and every later pass made
 through the Meaning Model's tools, with its hashes in [`construction/MANIFEST.json`](construction/MANIFEST.json). It
 imports into a fresh engine of Meaning Model 0.15.0 with the same hashes (`life_construction_import`); the state of
-15 October, at commit `0220fb3`, imports into the released 0.13.1. The structure's own construction history, with every recorded verdict,
+18 October is at commit `41d0702`, and the state of 15 October, at commit `0220fb3`, imports into the released 0.13.1.
+The laws pass's two ledgers, which its notes cite as files under `.local-work/laws/`, are in [`laws/`](laws/). The
+structure's own construction history, with every recorded verdict,
 is not published yet: its notes link files by absolute local paths, which are part of its hash-bound history. The
 manifest records its hashes, and [`structure/`](structure/) holds the tree it built. Engine databases, the working Sema
 vocabulary and call logs stay local and ignored.

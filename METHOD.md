@@ -281,6 +281,93 @@ is an account of the real world, so nothing is invented.
 - **Fillers** must say what each reading rests on, and nothing is tagged `source` until a source has been read. The
   first run's mistake of calling summaries "the abstract" is the case this rule exists for.
 
+## Places and laws
+
+The passes of 25 to 28 October made the account answerable in two new ways: where things happened, down to the
+country, and whether its numbers agree with each other.
+
+**Places.** The UN M49 standard's 248 countries and areas are places inside its 30 regions, each a Thing with a life
+of its own, so an Event can be placed in a country as it was placed in a region.
+- **Points.** Every place has a representative point: a latitude and longitude from Natural Earth's 1:10m map units
+  (version 5.1.1), recorded as a position process.
+- **Who did what.** A script recorded the places and points. Agents placed the Events, each in at most the three
+  countries it happened in, and left an Event at its region where no country fits it.
+
+**Laws.** A law in the Meaning Model says how processes must relate, in the engine's own expressions, and a world run
+applies it. These laws were written to test the model's numbers against each other, not to run a world:
+- **identities** that hold by definition: world output is people times output per person, each continent's people is
+  its share of humanity, and deaths are counted once across their causes;
+- **bridges,** whose parameters are stated in the law's provenance: deaths if numbers held steady (one over life
+  expectancy), births from fertility (by a factor calibrated on the model's own values for 1950 to 2025), growth
+  from births and deaths, and the energy and carbon in the fossil fuels burned;
+- **bounds:** towns hold at most the people not getting food (`SurplusBound`), and the largest town at most all town
+  dwellers.
+
+How they are held:
+- **Derived values.** Each law derives a process filed under one it reads. Its values are computed from its inputs
+  and held apart from the recorded ones (holder `derived-by-law`), so that the two can be set side by side.
+- **Two laws switched off.** The laws that would change a recorded process, growth from births and deaths and the
+  carbon kept in the air, are recorded but disabled. No world run applies them until the gaps they would close are
+  understood.
+- **A script checks them.** The engine does not compare a law with recorded values. So a script reads the laws from
+  the model and checks that every derived value follows from its inputs. Averages over an interval are taken over
+  time, not over whichever values fall inside it.
+
+**What they found, weighed before anything changed.** A fresh agent weighed the ten findings against the literature,
+in full texts where it could reach them, said how much of each it read, and gave each a status:
+- **known:** published, and cited;
+- **an error in the model:** which values, and why;
+- **a candidate discovery:** it must follow from the laws and values, be unpublished, and predict something the model
+  has not used;
+- **no finding:** the agreement holds by construction and tests nothing.
+
+None was a discovery, and one was no finding: world output as people times output per person. Two were known
+effects, and the corrections below change how the laws read them:
+- deaths fall below the steady rate in a growing population, whose people are young;
+- the share of carbon kept in the air is defined on all emissions, land use included, not on fossil carbon alone,
+  and the model's carbon contents for coal and oil were too high.
+
+The other seven were errors in the model. The largest, that births minus deaths exceed the counts in every era before
+1950, has a published explanation, the forager population paradox (Gurven & Davison 2019): normal-year mortality and
+fertility cannot give near-flat numbers without crises. The other six:
+- the 1918 influenza was held at January 1918, as one interpolated peak;
+- each plague was held as one interpolated peak;
+- the energy in a tonne of coal was too high for today's coal;
+- a bound compared shares with different denominators;
+- a largest settlement was counted before towns existed;
+- share bands ran beyond 0 to 100, and growth bands over short intervals were too wide to test anything.
+
+**Corrections, by script and from sources.**
+- **By script,** three corrections that needed no new numbers:
+  - share bands are kept within 0 to 100, and growth over an interval shorter than ten years gets the band a
+    ten-year interval would have, since errors in counts so close together are not independent;
+  - towns are a Thing of their own from 5000 BCE, with the largest town under them. That is the first recorded date
+    at which the town dwellers the model counts can hold its largest settlement.
+  - the steady-deaths law is labelled as a comparison for a stationary population.
+- **From sources,** by a fresh agent, each value tagged by how it was got:
+  - the 1918 influenza at 1918.8, from a toll of 30 million, with a band over the published range;
+  - each plague with its own waves, and the world's fall over 541–549 cut from 7% to about 1%;
+  - land-use carbon from the Global Carbon Budget, and the airborne fraction by decade;
+  - coal's and oil's carbon, and coal's energy, by era;
+  - a death rate for the crises the model does not date, set from the literature, not from the gap: before writing
+    from a published rate of catastrophes, held there for the early farmers, and from 2200 BCE from how often
+    outbreaks came, at an assumed toll each, falling to none from 1950.
+- **Held:** the surplus bound, whose two shares are still on different denominators, and the size of Çatalhöyük,
+  whose lower estimate comes from a 2024 study read only through a report of it.
+- **The laws then read those series,** and their values were derived again.
+- **Interpolated readings.** Where three or more Events fell between two values of a new series, a value interpolated
+  from its neighbours, which says so, was placed at those Events, so that the coverage report reads the series there.
+- **A repair by script,** revision 566. The correction at 549 had scaled an interpolated world output by the count's
+  change, which broke the identity that held by construction, world output as people times output per person: by
+  4.7% at 549 and, through the count read at 610, by 4.5% at 610. World output at both dates is set to people times
+  output per person, as the process is defined, with each continent's output scaled to match.
+
+Some agreements now hold by construction and test nothing: life expectancy at 1918 and at the plagues' dates was set
+from the same deaths, and the airborne fraction was computed from the recorded rise. What is left is named in the
+notes. About 0.4 to 0.6% a year of growth before 1950 is explained neither by the normal rates nor by the crises. The
+second ledger names three candidates: fertility as a long-run average, the births factor at forager rates, which the
+first ledger had excluded, and the counts.
+
 ## What the tools could do better
 
 Building this surfaced these limits, reported here as feedback:
@@ -303,6 +390,17 @@ Building this surfaced these limits, reported here as feedback:
 - **Retiring Events.** In a re-carve, concepts and carves can be withdrawn, but Events cannot. Node Events that notes
   are anchored to therefore stay as retired Events. Links are stored as anchor targets, so a scan of the notes' about
   records misses them. A tool listing the records a graph is anchored to would let a builder check a removal first.
+- **Graph growth.** Each rebind of the graph to a new model stored every node and edge id in the graph again: about
+  260 KB a rebind on this construction, 84% of its stored graph. A fix that stores only what a revision adds is
+  prepared for the next release.
+- **Readings at every Event.** A process with no subject is held to every Event in the world. So a slowly varying
+  parameter, such as the carbon in a tonne of coal, must be read at Events that do not concern it. Here the fuels'
+  contents were made about the Earth, and the rest were given interpolated readings.
+- **Laws.** The expressions have no logarithm and no earlier value, and nothing checks a law against the recorded
+  series it should agree with.
+- **The viewer's snapshot.** `life_model_viewer_open` refuses a snapshot over 32 MiB. This construction's snapshot
+  with its notes is 39 MB, and opening it by graph would hold 3.1 GB of history. The published viewer data is
+  therefore built from the export file. A higher limit is prepared for the next release.
 
 ## Continuing
 

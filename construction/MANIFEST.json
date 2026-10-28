@@ -3,22 +3,22 @@
     {
       "file": "history-numbers.construction.json",
       "schema": "meaning-model-construction-history/v2",
-      "bytes": 27191443,
-      "fileSha256": "8a52e83bffb1e0842f6443cadf61ae23862cf1044cbd70e88feca35248b75181",
-      "bundleSha256": "8ae8c95fd09f59313881f9109070707d55c0453a1da598c235e54c4a3d0fb370",
+      "bytes": 31591578,
+      "fileSha256": "3e54d10e928a40d3ca1c911dfaf59b7aa3fe30292ad44c833327ee6006c215f1",
+      "bundleSha256": "92fae1071a99476f70661ed6bcf84c1e340573103ddd2b4b82379bfd73404b2f",
       "graphId": "history-numbers",
-      "headGraphHash": "b42a853dd74020f487fb96d0a3afefee493406450de24d877eba64000cff8b2a",
-      "headModelHash": "ca7375fd639e8cf729bafea940dd03ededb9e72632e69365a82dac45a891deb8",
-      "graphRevisions": 520,
-      "models": 539,
+      "headGraphHash": "4d57a4399d19fc4256c97554600f2485423657e18bf3f5e96d6bfed585efe18f",
+      "headModelHash": "9dd100274f97b6943076fcbb39f9ae67e11e223431041a0d6ed16782ee555c24",
+      "graphRevisions": 557,
+      "models": 567,
       "accessScopes": [
         "world-history"
       ],
       "exportedWith": {
-        "meaningModel": "0.14.0 release candidate"
+        "meaningModel": "0.15.0"
       },
-      "importCheck": "Imported into a fresh engine of the published Meaning Model 0.15.0 with life_construction_import, through scripts/bridge.mjs and scripts/call.mjs: verified, 520 graph revisions and 539 models, with the same file, head graph and bundle hashes (2026-10-25).",
-      "note": "The state of 15 October, continued by eight passes on 2026-10-17 and 18, each by a fresh agent on the 0.14.0 release candidate, the first stopped partway. They filled the next level of the time schedule, widened the account where Events moved no process, deepened it where the tool named a process worth examining, and declared where a process's parts add up to it: 239 processes, 42 of them declaring a sum, and 1,152 Events; the coverage report found the work complete. The state of 15 October is at commit 0220fb3 (fileSha256 301304175bad6fb9…, headGraphHash 74c743aca0dfd4a4…). As there, graph hashes from revision 1 on differ from copies made before 2026-10-14, when the graph history was rebuilt."
+      "importCheck": "Imported into a fresh engine of the published Meaning Model 0.15.0 with life_construction_import: verified, 557 graph revisions and 567 model revisions, with the same head graph hash and bundle hash (2026-10-28).",
+      "note": "The state of 18 October, continued by three passes from 2026-10-25 to 28 on the released 0.15.0: countries and positions (the UN M49 standard's 248 countries and areas as places, every place with a point from Natural Earth's map units, and 629 of the 1,122 Events, the places' own lives aside, placed in a country), laws (21 laws that set the model's numbers against each other, with a fresh agent's ledger of what they found), and their corrections, by script and by a fresh agent from sources. 543 processes, 1,400 Events and 21 laws; the coverage report finds the work complete. The state of 18 October is at commit 41d0702 (fileSha256 8a52e83bffb1e084…, headGraphHash b42a853dd74020f4…), and the state of 15 October at commit 0220fb3 (fileSha256 301304175bad6fb9…, headGraphHash 74c743aca0dfd4a4…). As there, graph hashes from revision 1 on differ from copies made before 2026-10-14, when the graph history was rebuilt."
     }
   ],
   "notPublished": {
